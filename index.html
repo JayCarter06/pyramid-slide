@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+    </style>
+  <title>Pyramid Slide</title>
+  
+</head>
+<body >
+    <h1 style="background-color:LightBlue;">Pyramid Slide</h1>
+
+    <br>
+
+    <div style="background-color:LightGrey;" id="marg">
+    <form action="/action_page.php" method="get"></form>
+    <select id="brickType" onchange="sliderFunction()">
+        Brick Type:
+        <option value="#">#</option>
+        <option value="@">@</option>
+        <option value="$">$</option>
+        <option value="X">X</option>
+      </select>
+
+    
+        Height:
+        <input type="range" name="points" min="1" max="20" id="slider" oninput="sliderFunction()">
+        <span id="height"></span>
+      </form>
+    </div>
+
+    <br><br>
+
+    <div style="background-color:LightGrey;" id="pyramid"></div>
+
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>
